@@ -1,0 +1,160 @@
+/*
+Theme Name: Test Theme (Come up with name later)
+*/
+
+:root {
+    /* Regular 400 Medium 500 Semi-bold 600*/
+    --raleway: 'Raleway', sans-serif;
+    /* Semi-bold 600 Bold 700 Black 900 italic */
+    --montserrat: 'Montserrat', sans-serif;
+    --primary-blue: rgb(154, 213, 202);
+    --secondary-blue: rgb(172, 221, 231);
+    --tertiary-blue: rgb(173, 185, 227);
+    --primary-purple: rgb(163, 121, 201);
+    --secondary-purple: rgb(183, 68, 184)
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+p, a, span {
+    margin: 0;
+}
+
+p, a, span, li {
+    font-family: var(--raleway);
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: var(--montserrat);
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+}
+
+main.page-content {
+    font-size: 2rem;
+    padding: 3rem 5% 3rem 5%;
+    margin: 3rem 0;
+}
+
+/* HEADER STYLES */
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+header nav {
+    max-width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+header nav ul li {
+    font-size: 20px;
+    padding: 20px;
+}
+
+header nav ul li:hover, header nav ul li:active {
+    cursor: pointer;
+    color: var(--primary-blue);
+    font-weight: 600;
+    border-radius: 2px;
+    border-bottom: 2px solid var(--primary-blue);
+}
+
+.header-line {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    background-color: rgb(224, 224, 224);
+    z-index: -1;
+}
+
+/* HEADER STYLES END */
+
+#page-title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#page-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: center / cover no-repeat url("https://cdn.pixabay.com/photo/2017/06/05/07/58/butterfly-2373175_1280.png");
+    height: 40rem;
+}
+
+
+/* 
+FOOTER STYLES
+*/
+
+footer {
+    font-size: 2rem;
+}
+
+#primary-footer {
+    background-color: #e0e0e0;
+}
+
+.follow-us h4 {
+    font-size: 2.2rem;
+    
+}
+
+.follow-us-social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 4rem);
+}
+
+.follow-us-social-links img {
+    width: 3rem;
+    height: 3rem;
+    border: .1rem solid black;
+    padding: .1rem;
+}
+/* 
+FOOTER STYLES END
+*/
+
+#cookie-policy {
+    position: fixed;
+    right: 1.6rem;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    max-width: 40rem;
+    background-color: var(--primary-purple);
+    border: .1rem solid var(--secondary-purple);
+    border-radius: .4rem;
+    padding: 1.6rem;
+}
+
+#cookie-policy hr {
+    width: 100%;
+}
+
+#cookie-policy span, #cookie-policy p {
+    text-align: center;
+    color: #fff;
+}

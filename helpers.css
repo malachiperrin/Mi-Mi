@@ -1,0 +1,43 @@
+:root {
+    /* Regular 400 Medium 500 Semi-bold 600*/
+    --raleway: 'Raleway', sans-serif;
+    /* Semi-bold 600 Bold 700 Black 900 italic */
+    --montserrat: 'Montserrat', sans-serif;
+    --primary-blue: rgb(154, 213, 202);
+    --secondary-blue: rgb(172, 221, 231);
+    --tertiary-blue: rgb(173, 185, 227);
+    --primary-purple: rgb(163, 121, 201);
+    --secondary-purple: rgb(183, 68, 184)
+}
+
+.btn {
+    border: none;
+    padding: 1rem;
+}
+
+.btn.btn-rounded {
+    border-radius: .5rem;
+}
+
+.btn:hover, .btn:active {
+    background-color: var(--secondary-blue);
+    color: #fff;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-group .btn {
+    margin: 1rem 1.5rem;
+}
+
+.is-grid {
+    display: grid;
+}
+
+.is-flex {
+    display: flex;
+}
