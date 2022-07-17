@@ -7,3 +7,8 @@ add_theme_support( 'custom-logo', array(
     'height' => 300,
     'width'  => 300,
 ) );
+
+// sidebar
+
+
+// navbar
