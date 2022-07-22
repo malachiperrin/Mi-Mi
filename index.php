@@ -1,5 +1,4 @@
 <?php 
-include( "public/classes/View.class.php" );
 get_header();
 ?>
 

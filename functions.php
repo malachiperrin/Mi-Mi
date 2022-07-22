@@ -8,7 +8,7 @@ add_theme_support( 'custom-logo', array(
     'width'  => 300,
 ) );
 
+// theme mod
+
+
 // sidebar
-
-
-// navbar
